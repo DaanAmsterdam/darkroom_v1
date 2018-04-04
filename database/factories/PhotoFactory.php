@@ -6,7 +6,7 @@ $factory->define(App\Photo::class, function (Faker $faker) {
     return [
         'user_id'             => $faker->randomDigitNotNull,
         'collection_id'       => $faker->randomDigitNotNull,
-        'title'               => $faker->sentence($nbWords = 4),
+        'title'               => $faker->sentence($nbWords = 3),
         'body'                => $faker->realText($maxNbChars = 120),
         'shot_at'             => $faker->dateTime,
         'camera'              => $faker->company,
@@ -16,7 +16,7 @@ $factory->define(App\Photo::class, function (Faker $faker) {
         'iso'                 => $faker->randomNumber($nbDigits = 3, $strict = false),
         'focallength'         => $faker->numberBetween($min = 1000, $max = 9000),
         'location'            => $faker->country,
-        'keywords'            => $faker->word,
+        'keywords'            => $faker->word . ', ' . $faker->word . ', ' . $faker->word,
         'filename'            => $faker->domainWord . '.jpg',
         'views'               => $faker->randomNumber($nbDigits = 2),
     ];

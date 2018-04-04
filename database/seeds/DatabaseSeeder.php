@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
+// php artisan migrate:refresh --seed
 class DatabaseSeeder extends Seeder
 {
     /**

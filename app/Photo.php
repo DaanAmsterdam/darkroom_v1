@@ -13,4 +13,9 @@ class Photo extends Model
     protected $casts = [
         'shot_at' => 'date:Y-m-d',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
