@@ -1,17 +1,6 @@
 <?php
 
 /*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-/*
 GET   request to  /photos ->             function index() ->     all of the photos, as select * from photos
 GET   request to  /photos/create ->      function create() ->    create a photo page.. (display a form)
 POST  request to  /photos ->             function store() ->     submit the form, store the photo in the database (post request to the resource)
@@ -21,6 +10,8 @@ PATCH request to  /photos/{id} ->        function update() ->    when you submit
 DELETE request to /photos/{id} ->        function destroy() ->   use the /photos/{id} endpoint to delete the resource.
 */
 
+Auth::loginUsingId(2);
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -28,6 +19,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//Route::get('photos/upload', 'PhotoController@upload');
+//Route::post('photos/create', 'PhotoController@create');
 
 Route::get('/photos', 'PhotoController@index');
 Route::get('/photos/create', 'PhotoController@create');
