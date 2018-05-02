@@ -13,16 +13,16 @@ class Photo extends Model implements HasMedia
 
     public function registerMediaConversions(Media $media = null)
     {
-        $this->addMediaConversion('hd')
-             ->width(1920)
-             ->nonOptimized();
-
-        $this->addMediaConversion('thumb')
-             ->width(400);
+        // $this->addMediaConversion('thumb')
+        //      ->width(400)
+        //      ->nonOptimized();
     }
 
     protected $fillable = [
-        'user_id', 'collection_id', 'title', 'body', 'shot_at', 'camera', 'lens', 'shutterspeed', 'aperture', 'iso', 'focallength', 'location', 'keywords', 'filename', 'views',
+        'user_id', 'collection_id', 'title', 'body', 'shot_at',
+        'camera', 'lens', 'shutterspeed', 'aperture', 'iso',
+        'focallength', 'ndfilter', 'tripod', 'gps', 'keywords',
+            'filename', 'views',
     ];
 
     protected $casts = [

@@ -69,8 +69,6 @@ class PhotoController extends Controller
         $reader = new \PHPExif\Reader\Reader($adapter);
         $exif = $reader->read($request->file('photo'));
 
-        var_dump($exif);
-
         // Create Photo object and store it in the database
         $photo = new Photo;
         $photo->user_id = auth()->user()->id;
@@ -78,14 +76,12 @@ class PhotoController extends Controller
         $photo->body = $exif->getCaption();
         $photo->shot_at = $exif->getCreationDate();
         $photo->camera = $exif->getCamera();
-        //$photo->lens = $exif->getRawData()['UndefinedTag:0xA434'];
         $photo->lens = $exif->getRawData()['ExifIFD:LensModel'];
-
         $photo->shutterspeed = $exif->getExposure();
         $photo->aperture = $exif->getAperture();
         $photo->iso = $exif->getIso();
         $photo->focallength = $exif->getFocalLength();
-        $photo->location = $exif->getGPS();
+        $photo->gps = $exif->getGPS();
         if (is_array($exif->getKeywords())) {
             $photo->keywords = implode(', ', $exif->getKeywords());
         }
@@ -94,13 +90,6 @@ class PhotoController extends Controller
 
         $photo->addMedia($request->file('photo'))
               ->toMediaCollection('photos');
-
-        // // file storage without the media library
-        // $path = Storage::putFileAs(
-        //     'photos',
-        //     $request->file('photo'),
-        //     $request->photo->getClientOriginalName()
-        // );
 
         // Log to logfile and to slack!
         Log::critical(auth()->user()->name . ' just uploaded ' . $exif->getTitle() . ' to the Darkroom. Check it out!');

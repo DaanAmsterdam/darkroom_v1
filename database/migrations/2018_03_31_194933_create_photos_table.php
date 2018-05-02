@@ -27,8 +27,10 @@ class CreatePhotosTable extends Migration
             $table->string('aperture')->nullable();
             $table->integer('iso')->nullable();
             $table->string('focallength')->nullable();
+            $table->string('ndfilter')->nullable();
+            $table->boolean('tripod')->default(0);
 
-            $table->string('location')->nullable(); // text or gps
+            $table->string('gps')->nullable(); // text or gps
             $table->text('keywords')->nullable();
             $table->string('filename')->nullable();
 
