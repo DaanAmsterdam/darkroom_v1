@@ -11,7 +11,6 @@
     <title>{{ config('app.name') }}</title>
 
     <link href="/css/app.css" rel="stylesheet">
-    <link href="/css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
