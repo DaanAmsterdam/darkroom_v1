@@ -14,9 +14,19 @@
 </head>
 
 <body>
-    @include('layouts.header') @yield('content')
-    @include('layouts.aside')
+    <div class="container flex flex-col h-screen justify-between">
+        <div class="py-4 bg-grey mb-2">
+    @include('layouts.header')
+        </div>
+
+        <div class="py-4 bg-grey mb-2">
+            @yield('content')
+        </div>
+
+        <div class="py-4 bg-grey">
     @include('layouts.footer')
+        </div>
+    </div>
 </body>
 
 </html>

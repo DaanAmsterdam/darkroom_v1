@@ -1,3 +1,1 @@
-<footer>
-    <div>Stukje footer</div>
-</footer>
+Stukje footer

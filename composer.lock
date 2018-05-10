@@ -590,16 +590,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.6.19",
+            "version": "v5.6.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "4e480de7fe51c52573a95b25ebf85f5c7f5d2087"
+                "reference": "3c11e7acc6ad14dd86e2f9e4bf3230010c3e611c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/4e480de7fe51c52573a95b25ebf85f5c7f5d2087",
-                "reference": "4e480de7fe51c52573a95b25ebf85f5c7f5d2087",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/3c11e7acc6ad14dd86e2f9e4bf3230010c3e611c",
+                "reference": "3c11e7acc6ad14dd86e2f9e4bf3230010c3e611c",
                 "shasum": ""
             },
             "require": {
@@ -725,7 +725,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-04-30T17:43:38+00:00"
+            "time": "2018-05-02T15:22:18+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1721,16 +1721,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "7.3.0",
+            "version": "7.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "cfc60632369eb18b9585ac7eff33f59b5f7d2507"
+                "reference": "f7fcd7e5534953a953c8ec170d8615f1d929bd2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/cfc60632369eb18b9585ac7eff33f59b5f7d2507",
-                "reference": "cfc60632369eb18b9585ac7eff33f59b5f7d2507",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/f7fcd7e5534953a953c8ec170d8615f1d929bd2b",
+                "reference": "f7fcd7e5534953a953c8ec170d8615f1d929bd2b",
                 "shasum": ""
             },
             "require": {
@@ -1751,6 +1751,7 @@
             },
             "require-dev": {
                 "doctrine/dbal": "^2.5.2",
+                "ext-pdo_sqlite": "*",
                 "guzzlehttp/guzzle": "^6.3",
                 "league/flysystem-aws-s3-v3": "^1.0.13",
                 "mockery/mockery": "^1.0.0",
@@ -1799,7 +1800,7 @@
                 "media",
                 "spatie"
             ],
-            "time": "2018-04-30T11:14:01+00:00"
+            "time": "2018-05-04T07:11:50+00:00"
         },
         {
             "name": "spatie/pdf-to-image",
