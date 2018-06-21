@@ -14,17 +14,14 @@
 </head>
 
 <body>
-    <div class="container flex flex-col h-screen justify-between">
-        <div class="py-4 bg-grey mb-2">
+    <div class="mx-auto flex flex-col h-screen">
     @include('layouts.header')
-        </div>
 
-        <div class="py-4 bg-grey mb-2">
-            @yield('content')
-        </div>
 
-        <div class="py-4 bg-grey">
-    @include('layouts.footer')
+        <div class="flex h-full">
+    @include('layouts.sidebar') @yield('content')
+
+
         </div>
     </div>
 </body>

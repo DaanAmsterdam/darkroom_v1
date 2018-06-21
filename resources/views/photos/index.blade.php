@@ -1,15 +1,10 @@
-@extends('layouts.master')
-
+@extends('layouts.master') 
 @section('content')
+<div class="bg-grey-light w-full">
 
-    <ul>
     @foreach ($photos as $photo)
-    <li>
-        <a href="/photos/{{ $photo->id }}">
-            {{ $photo->title }}<br>
-        </a>
-    </li>
-    @endforeach
-    </ul>
-    
+    <a href="/photos/{{ $photo->id }}">
+                 <img src="{{ $photo->getFirstMedia()->getUrl('300') }}">
+            </a> @endforeach
+</div>
 @endsection

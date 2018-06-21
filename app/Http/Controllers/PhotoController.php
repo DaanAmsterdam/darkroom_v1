@@ -59,15 +59,10 @@ class PhotoController extends Controller
                 'photo' => 'required|image|file'
             ]);
 
-        // get the exif data
-        $adapter = new \PHPExif\Adapter\Exiftool(
-            [
-                'toolPath'  => '/usr/local/bin/exiftool',
-            ]
-        );
+        // Get the exif data from the uploaded file
+        $exif = Photo::getExif($request->file('photo'));
 
-        $reader = new \PHPExif\Reader\Reader($adapter);
-        $exif = $reader->read($request->file('photo'));
+        //dd($exif);
 
         // Create Photo object and store it in the database
         $photo = new Photo;
@@ -88,8 +83,11 @@ class PhotoController extends Controller
         $photo->filename = $request->photo->getClientOriginalName();
         $photo->save();
 
-        $photo->addMedia($request->file('photo'))
-              ->toMediaCollection('photos');
+        $photo->addMediaFromRequest('photo')
+              ->sanitizingFileName(function ($fileName) {
+                  return strtolower(str_replace(['#', '/', '\\', ' '], '-', $fileName));
+              })
+              ->toMediaCollection();
 
         // Log to logfile and to slack!
         Log::critical(auth()->user()->name . ' just uploaded ' . $exif->getTitle() . ' to the Darkroom. Check it out!');
@@ -105,6 +103,9 @@ class PhotoController extends Controller
      */
     public function show(Photo $photo)
     {
+        //$media = $photo->getFirstMedia('photos');
+        //$url = $media->getUrl('300');
+
         return view('photos.show', compact('photo'));
     }
 

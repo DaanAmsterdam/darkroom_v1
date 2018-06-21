@@ -734,6 +734,10 @@ button,
   background-color: transparent;
 }
 
+.bg-darkroom-red {
+  background-color: #8d3e31;
+}
+
 .bg-black {
   background-color: #22292f;
 }
@@ -1024,6 +1028,10 @@ button,
 
 .hover\:bg-transparent:hover {
   background-color: transparent;
+}
+
+.hover\:bg-darkroom-red:hover {
+  background-color: #8d3e31;
 }
 
 .hover\:bg-black:hover {
@@ -1382,6 +1390,10 @@ button,
   border-color: transparent;
 }
 
+.border-darkroom-red {
+  border-color: #8d3e31;
+}
+
 .border-black {
   border-color: #22292f;
 }
@@ -1672,6 +1684,10 @@ button,
 
 .hover\:border-transparent:hover {
   border-color: transparent;
+}
+
+.hover\:border-darkroom-red:hover {
+  border-color: #8d3e31;
 }
 
 .hover\:border-black:hover {
@@ -3742,6 +3758,10 @@ button,
   color: transparent;
 }
 
+.text-darkroom-red {
+  color: #8d3e31;
+}
+
 .text-black {
   color: #22292f;
 }
@@ -4032,6 +4052,10 @@ button,
 
 .hover\:text-transparent:hover {
   color: transparent;
+}
+
+.hover\:text-darkroom-red:hover {
+  color: #8d3e31;
 }
 
 .hover\:text-black:hover {
@@ -4725,6 +4749,10 @@ button,
     background-color: transparent;
   }
 
+  .sm\:bg-darkroom-red {
+    background-color: #8d3e31;
+  }
+
   .sm\:bg-black {
     background-color: #22292f;
   }
@@ -5015,6 +5043,10 @@ button,
 
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent;
+  }
+
+  .sm\:hover\:bg-darkroom-red:hover {
+    background-color: #8d3e31;
   }
 
   .sm\:hover\:bg-black:hover {
@@ -5373,6 +5405,10 @@ button,
     border-color: transparent;
   }
 
+  .sm\:border-darkroom-red {
+    border-color: #8d3e31;
+  }
+
   .sm\:border-black {
     border-color: #22292f;
   }
@@ -5663,6 +5699,10 @@ button,
 
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
+  }
+
+  .sm\:hover\:border-darkroom-red:hover {
+    border-color: #8d3e31;
   }
 
   .sm\:hover\:border-black:hover {
@@ -7725,6 +7765,10 @@ button,
     color: transparent;
   }
 
+  .sm\:text-darkroom-red {
+    color: #8d3e31;
+  }
+
   .sm\:text-black {
     color: #22292f;
   }
@@ -8015,6 +8059,10 @@ button,
 
   .sm\:hover\:text-transparent:hover {
     color: transparent;
+  }
+
+  .sm\:hover\:text-darkroom-red:hover {
+    color: #8d3e31;
   }
 
   .sm\:hover\:text-black:hover {
@@ -8694,6 +8742,10 @@ button,
     background-color: transparent;
   }
 
+  .md\:bg-darkroom-red {
+    background-color: #8d3e31;
+  }
+
   .md\:bg-black {
     background-color: #22292f;
   }
@@ -8984,6 +9036,10 @@ button,
 
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
+  }
+
+  .md\:hover\:bg-darkroom-red:hover {
+    background-color: #8d3e31;
   }
 
   .md\:hover\:bg-black:hover {
@@ -9342,6 +9398,10 @@ button,
     border-color: transparent;
   }
 
+  .md\:border-darkroom-red {
+    border-color: #8d3e31;
+  }
+
   .md\:border-black {
     border-color: #22292f;
   }
@@ -9632,6 +9692,10 @@ button,
 
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
+  }
+
+  .md\:hover\:border-darkroom-red:hover {
+    border-color: #8d3e31;
   }
 
   .md\:hover\:border-black:hover {
@@ -11694,6 +11758,10 @@ button,
     color: transparent;
   }
 
+  .md\:text-darkroom-red {
+    color: #8d3e31;
+  }
+
   .md\:text-black {
     color: #22292f;
   }
@@ -11984,6 +12052,10 @@ button,
 
   .md\:hover\:text-transparent:hover {
     color: transparent;
+  }
+
+  .md\:hover\:text-darkroom-red:hover {
+    color: #8d3e31;
   }
 
   .md\:hover\:text-black:hover {
@@ -12663,6 +12735,10 @@ button,
     background-color: transparent;
   }
 
+  .lg\:bg-darkroom-red {
+    background-color: #8d3e31;
+  }
+
   .lg\:bg-black {
     background-color: #22292f;
   }
@@ -12953,6 +13029,10 @@ button,
 
   .lg\:hover\:bg-transparent:hover {
     background-color: transparent;
+  }
+
+  .lg\:hover\:bg-darkroom-red:hover {
+    background-color: #8d3e31;
   }
 
   .lg\:hover\:bg-black:hover {
@@ -13311,6 +13391,10 @@ button,
     border-color: transparent;
   }
 
+  .lg\:border-darkroom-red {
+    border-color: #8d3e31;
+  }
+
   .lg\:border-black {
     border-color: #22292f;
   }
@@ -13601,6 +13685,10 @@ button,
 
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
+  }
+
+  .lg\:hover\:border-darkroom-red:hover {
+    border-color: #8d3e31;
   }
 
   .lg\:hover\:border-black:hover {
@@ -15663,6 +15751,10 @@ button,
     color: transparent;
   }
 
+  .lg\:text-darkroom-red {
+    color: #8d3e31;
+  }
+
   .lg\:text-black {
     color: #22292f;
   }
@@ -15953,6 +16045,10 @@ button,
 
   .lg\:hover\:text-transparent:hover {
     color: transparent;
+  }
+
+  .lg\:hover\:text-darkroom-red:hover {
+    color: #8d3e31;
   }
 
   .lg\:hover\:text-black:hover {
@@ -16632,6 +16728,10 @@ button,
     background-color: transparent;
   }
 
+  .xl\:bg-darkroom-red {
+    background-color: #8d3e31;
+  }
+
   .xl\:bg-black {
     background-color: #22292f;
   }
@@ -16922,6 +17022,10 @@ button,
 
   .xl\:hover\:bg-transparent:hover {
     background-color: transparent;
+  }
+
+  .xl\:hover\:bg-darkroom-red:hover {
+    background-color: #8d3e31;
   }
 
   .xl\:hover\:bg-black:hover {
@@ -17280,6 +17384,10 @@ button,
     border-color: transparent;
   }
 
+  .xl\:border-darkroom-red {
+    border-color: #8d3e31;
+  }
+
   .xl\:border-black {
     border-color: #22292f;
   }
@@ -17570,6 +17678,10 @@ button,
 
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
+  }
+
+  .xl\:hover\:border-darkroom-red:hover {
+    border-color: #8d3e31;
   }
 
   .xl\:hover\:border-black:hover {
@@ -19632,6 +19744,10 @@ button,
     color: transparent;
   }
 
+  .xl\:text-darkroom-red {
+    color: #8d3e31;
+  }
+
   .xl\:text-black {
     color: #22292f;
   }
@@ -19922,6 +20038,10 @@ button,
 
   .xl\:hover\:text-transparent:hover {
     color: transparent;
+  }
+
+  .xl\:hover\:text-darkroom-red:hover {
+    color: #8d3e31;
   }
 
   .xl\:hover\:text-black:hover {
